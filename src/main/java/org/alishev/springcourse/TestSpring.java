@@ -1,6 +1,5 @@
 package org.alishev.springcourse;
 
-import com.codeborne.selenide.Selenide;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestSpring {
