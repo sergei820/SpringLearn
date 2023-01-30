@@ -1,3 +1,3 @@
 # SpringLearn
 
-stopped here: Spring Framework. Урок 6 - 17:28
+stopped here: Spring Framework. Урок 8 - 07:48

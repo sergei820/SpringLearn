@@ -1,19 +1,12 @@
 package org.alishev.springcourse;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MusicPlayer {
-    private List<Music> musicList = new ArrayList<>();
+    private Music music;
     private String name;
     private int volume;
 
     public String getName() {
         return name;
-    }
-
-    public void setMusicList(List<Music> musicList) {
-        this.musicList = musicList;
     }
 
     public void setName(String name) {
