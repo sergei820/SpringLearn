@@ -4,10 +4,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestSpring {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        TestBean testBean = context.getBean("testBean", TestBean.class);
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        System.out.println(testBean.getName());
+        //Music musicBean = context.getBean("musicBean", Music.class);
+        //MusicPlayer musicPlayer = new MusicPlayer(musicBean);
+        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        musicPlayer.playMusic();
 
         context.close();
     }
