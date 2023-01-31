@@ -2,7 +2,7 @@ package org.springcourse;
 
 import org.springframework.stereotype.Component;
 
-@Component("jazzMusicBean")
+@Component
 public class JazzMusic implements Music {
 
     /*private JazzMusic() {}
