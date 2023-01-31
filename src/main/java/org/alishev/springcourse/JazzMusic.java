@@ -2,13 +2,15 @@ package org.alishev.springcourse;
 
 public class JazzMusic implements Music {
 
-    public void doMyInit() {
-        System.out.println("Doing my initialization");
+    private JazzMusic() {}
+
+    public static JazzMusic getJazzMusic() {
+        return new JazzMusic();
     }
 
-    public void doMyDestroy() {
-        System.out.println("Doing my destruction");
-    }
+    public void doMyInit() {System.out.println("Doing my initialization");}
+
+    public void doMyDestroy() {System.out.println("Doing my destruction");}
 
     @Override
     public String getSong() {

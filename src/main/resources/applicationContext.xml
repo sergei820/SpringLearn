@@ -13,7 +13,9 @@
     <bean id="musicBean"
           class="org.alishev.springcourse.JazzMusic"
           init-method="doMyInit"
-          destroy-method="doMyDestroy"/>
+          destroy-method="doMyDestroy"
+          factory-method="getJazzMusic"/>
+
     <bean id="musicPlayer" class="org.alishev.springcourse.MusicPlayer">
         <!--<constructor-arg ref="musicBean"/> - works as a MusicPlayer constructor-->
         <property name="music" ref="musicBean"/><!--Creates new MusicPlayer() with default constructor and setMusic()-->
