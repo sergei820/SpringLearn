@@ -1,8 +1,11 @@
-package org.alishev.springcourse;
+package org.springcourse;
 
+import org.springframework.stereotype.Component;
+
+@Component("jazzMusicBean")
 public class JazzMusic implements Music {
 
-    private JazzMusic() {}
+    /*private JazzMusic() {}
 
     public static JazzMusic getJazzMusic() {
         return new JazzMusic();
@@ -10,7 +13,7 @@ public class JazzMusic implements Music {
 
     public void doMyInit() {System.out.println("Doing my initialization");}
 
-    public void doMyDestroy() {System.out.println("Doing my destruction");}
+    public void doMyDestroy() {System.out.println("Doing my destruction");}*/
 
     @Override
     public String getSong() {

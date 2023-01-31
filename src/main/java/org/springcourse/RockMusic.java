@@ -1,4 +1,4 @@
-package org.alishev.springcourse;
+package org.springcourse;
 
 public class RockMusic implements Music {
     @Override
