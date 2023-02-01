@@ -1,7 +1,3 @@
-# SpringLearn
-
-stopped here: Spring Framework. Lesson 11 - to watch
-
 Spring
 
 Core container
@@ -88,3 +84,24 @@ NoUniqueBeanDefinitionException - спринг не знает, какой из 
 - любой тип возвращаемого объекта (можно void, поскольку в любом случае нам не получить возвращаемый объект)
 - название метода любое
 - аргументов метода быть не должно
+
+Конфигурация Spring приложения может быть настроена в:
+- XML
+- XML + Annotations
+- Java Code + Annotations
+
+@Configuration - аннотация помечает класс как конфигурационный класс для Спринг
+- Ссылка на класс с конфигурацией теперь использует другой класс и указывает не на XML конфиг, а на конфиг класс:
+AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
+- Для каждого XML тэга из springConfig.xml есть соответствующая аннотация:
+@ComponentScan("org.springcourse")
+- аналог <context:component-scan base-package="org.springcourse"/>
+@Bean - применяется к конструктору класса бина, объявленному в конфиг классе
+bean id = @Bean method name ("musicBean")
+@Bean
+public JazzMusic musicBean() {
+return new JazzMusic();
+}
+
+@PropertySource("classpath:musicPlayer.properties") - применяется к классу SpringConfig
+- аналог <context:property-placeholder location="classpath:musicPlayer.properties"/>
