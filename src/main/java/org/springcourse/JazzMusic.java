@@ -1,12 +1,11 @@
 package org.springcourse;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-
+@Component
 public class JazzMusic implements Music {
 
     @PostConstruct
