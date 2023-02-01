@@ -74,3 +74,7 @@ Annotations
 @Autowired подбирает подходящий бин по типу (класс или интерфейс)
 
 @Autowired можно навесить на поле (даже на private), сеттер или конструктор
+
+NoUniqueBeanDefinitionException - спринг не знает, какой из бинов внедрить
+
+@Qualifier("beanId") - указывает id бина, который мы хотим внедрить
